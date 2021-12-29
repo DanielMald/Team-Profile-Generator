@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+function generatehtml(employees) {
+return `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -23,16 +24,16 @@
             Manager
         </div>
         <div class="name block">
-            Name
+            Name: ${employees[0].name}
         </div> 
         <div class="email block">
-            email
+            email: ${employees[0].email}
         </div>
         <div class="id block">
-            ID
+            ID: ${employees[0].id}
         </div>
         <div class="office block">
-            Office Number
+            Office Number: ${employees[0].officeNumber}
         </div>
     </section>
 
@@ -41,36 +42,40 @@
             Intern
         </div>
         <div class="name block">
-            Name
+            Name: ${employees[1].name}
         </div> 
         <div class="email block">
-            email
+            email: ${employees[1].email}
         </div>
         <div class="id block">
-            ID
+            ID: ${employees[1].id}
         </div>
         <div class="school block">
-            School
+            School: ${employees[1].school}
         </div>
     </section>
 
     <section class="engineer box">
         <div class="position box">
-            Engineer
+            Engineer: 
         </div>
         <div class="name block">
-            Name
+            Name: ${employees[2].name}
         </div> 
         <div class="email block">
-            email
+            email: ${employees[2].email}
         </div>
         <div class="id block">
-            ID
+            ID: ${employees[2].id}
         </div>
         <div class="github block">
-            GitHub
+            GitHub: ${employees[2].github}
         </div>
     </section>
 
 </body>
-</html>
+</html>`
+}
+
+
+module.exports = generatehtml
